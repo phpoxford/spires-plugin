@@ -1,0 +1,43 @@
+{
+    "name": "phpoxford/spires-plugin",
+    "description": "Starter template for a Spires plugin",
+    "type": "library",
+    "homepage": "https://github.com/username/spires-plugin-pluginname",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "yourname@example.com",
+            "homepage": "http://example.com"
+        }
+    ],
+    "require": {
+        "phpoxford/spires": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4",
+        "hamcrest/hamcrest-php": "^2.0",
+        "scrutinizer/ocular": "~1.3",
+        "squizlabs/php_codesniffer": "~2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\Spires\\PluginName\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YourNamespace\\Spires\\PluginName\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "sniff": "./vendor/bin/phpcs src/ --standard=PSR2 --report=summary",
+        "fix": "./vendor/bin/phpcbf src/ --standard=PSR2",
+        "test": "./vendor/bin/phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
