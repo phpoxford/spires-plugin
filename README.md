@@ -1,3 +1,12 @@
+## Create new spires plugin
+
+``` bash
+$ composer create-project phpoxford/spires-plugin {spires-plugin-tictactoe} --stability="dev"
+```
+Where `{spires-plugin-tictactoe}` is the folder that will be created.
+
+---
+
 # Spires PluginName
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
