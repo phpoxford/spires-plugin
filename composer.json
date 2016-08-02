@@ -26,6 +26,9 @@
         }
     },
     "autoload-dev": {
+      "files": [
+        "vendor/hamcrest/hamcrest-php/hamcrest/Hamcrest.php"
+      ],
         "psr-4": {
             "YourNamespace\\Spires\\PluginName\\Tests\\": "tests/"
         }

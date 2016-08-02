@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/bootstrap/bootstrap.php';
+
+// Create new instance of the core
+$core = new \Spires\Core\Core(realpath(__DIR__));
+
+// Register and configure the IRC client
+$core->register(\Spires\Irc\ServiceProvider::class, [
+    'connection.channel' => '##sometestingchannel',
+    'connection.server'  => 'irc.freenode.com',
+    'connection.port'    => 6667,
+    'user.nickname'      => 'spires',
+    'user.username'      => 'spiresbot',
+    'user.realname'      => 'Spires ALPHA',
+]);
+
+// Register the base providers for handling the basic message types
+$core->registerBaseServiceProviders();
+
+// Register service providers
+$core->register(\YourNamespace\Spires\PluginName\ServiceProvider::class);
+
+// Boot the core
+$core->boot();
+
+// Connect and run the client
+$client = $core->make(\Spires\Irc\Client::class);
+$client->logCore($core);
+
+$client->connect();
+$client->run();
