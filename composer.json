@@ -2,7 +2,7 @@
     "name": "phpoxford/spires-plugin",
     "description": "Starter template for a Spires plugin",
     "type": "library",
-    "homepage": "https://github.com/username/spires-plugin-pluginname",
+    "homepage": "https://github.com/phpoxford/spires-plugin",
     "license": "MIT",
     "authors": [
         {

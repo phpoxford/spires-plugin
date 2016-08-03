@@ -32,7 +32,7 @@ $ composer test
 **Happy coding**!
 
 
-[link-github]: https://github.com/username/spires-plugin-pluginname
+[link-github]: https://github.com/phpoxford/spires-plugin
 [link-psr2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 [link-code-sniffer]: http://pear.php.net/package/PHP_CodeSniffer
 [link-semver]: http://semver.org

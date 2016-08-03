@@ -16,7 +16,7 @@ Where `{spires-plugin-tictactoe}` is the folder that will be created.
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Plugin for the IRC bot [Spires](link-spires) made by the [PHPOxford](link-phpoxford) user group.
+Plugin for the IRC bot [Spires][link-spires] made by the [PHPOxford][link-phpoxford] user group.
 
 ---
 
@@ -31,7 +31,7 @@ This plugin let users play some game with eachother.
 
 ## Change log
 
-Please see [CHANGELOG](/CHANGELOG.md) for more information what has changed recently.
+Please see [CHANGELOG][link-changelog] for more information what has changed recently.
 
 ## Testing
 
@@ -79,5 +79,6 @@ The MIT License (MIT). Please see [License File][link-license] for more informat
 [link-phpoxford]: http://phpoxford.uk
 
 [link-license]: /LICENSE.md
+[link-changelog]: /CHANGELOG.md
 [link-contributing]: /CONTRIBUTING.md
 [link-contributors]: ../../contributors
